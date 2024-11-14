@@ -22,7 +22,7 @@
     <main>
         <section class="location-selector">
             <label for="location">Select Location:</label>
-            <select id="location">
+            <select id="location" onchange="updateLocation()">
                 <option value="Kepulauan Seribu">Kepulauan Seribu</option>
                 <option value="Jakarta">Jakarta</option>
                 <option value="Bandung">Bandung</option>
@@ -79,6 +79,12 @@
     <footer>
         <p>&copy; 2024 BMKG | All Rights Reserved</p>
     </footer>
+    <script>
+        function updateLocation() {
+            const locationSelect = document.getElementById("location");
+            const selectedLocation = locationSelect.options[locationSelect.selectedIndex].text;
+            document.getElementById("selected-location").innerText = selectedLocation;
+        }
     </script>
 </body>
 </html>
