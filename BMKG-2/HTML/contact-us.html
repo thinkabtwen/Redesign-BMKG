@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubungi Kami - BMKG</title>
+    <link rel="stylesheet" href="../CSS/contact.css">
+</head>
+<body>
+    <nav id="navbar">
+        <img src="" alt="" width="150">
+        <div id="dropdown-icon">☰</div>
+        <div id="nav-menu">
+            <div id="menu-right">
+                <div class="hover-underline-animation">
+                    <a href="project.html" id="home-link">Home</a>
+                </div>
+                <div class="hover-underline-animation">
+                    <a href="weather-forecast.html" id="weather-link">Cuaca</a>
+                </div>
+                <div class="hover-underline-animation">
+                    <a href="" id="news-link">Berita</a>
+                </div>
+                <div class="hover-underline-animation">
+                    <a href="#" id="contact-link">Hubungi Kami</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="contact-container">
+        <h1>Hubungi Kami</h1>
+        <p>Silakan isi formulir di bawah ini dan kami akan segera menghubungi Anda.</p>
+        <form id="contact-form">
+            <label for="fullname">Nama Lengkap</label>
+            <input type="text" id="fullname" required>
+            <span class="error" id="name-error"></span>
+
+            <label for="email">Alamat Email</label>
+            <input type="email" id="email" required>
+            <span class="error" id="email-error"></span>
+
+            <label for="phone">Nomor Telepon</label>
+            <input type="tel" id="phone" required>
+            <span class="error" id="phone-error"></span>
+
+            <label for="gender">Jenis Kelamin</label>
+            <select id="gender" required>
+                <option value="">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <span class="error" id="gender-error"></span>
+
+            <div class="newsletter">
+                <label for="newsletter">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    Saya ingin menerima berita terkini.
+                </label>
+                <span class="error" id="newsletter-error"></span>
+            </div>
+            
+            <br>
+
+            <button type="submit">Submit</button>
+            <div id="form-success" class="success"></div>
+        </form>
+    </div>
+
+    <footer>
+        <div>
+            <a href="https://twitter.com/infoBMKG">
+        <img src="../Images/twticon.png" alt="twt logo" width="30" height="20">
+    </a>
+    <a href="https://www.instagram.com/infoBMKG">
+        <img src="../Images/ig.png" alt="ig logo" width="20" height="20">
+    </a>
+    </div>
+    <p class="copyright">© 2024 - Badan Meteorologi, Klimatologi, dan Geofisika</p>
+    </footer> 
+</body>
+<script src="../JS/carousel.js"></script>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prakiraan Cuaca - BMKG</title>
+    <link rel="stylesheet" href="../CSS/weather-forecast.css">
+</head>
+<body>
+    <nav id="navbar">
+        <img src="" alt="" width="150">
+        <div id="dropdown-icon">☰</div>
+        <div id="nav-menu">
+            <div id="menu-right">
+                <div class="hover-underline-animation">
+                    <a href="project.html" id="home-link">Home</a>
+                </div>
+                <div class="hover-underline-animation">
+                    <a href="#" id="weather-link">Cuaca</a>
+                </div>
+                <div class="hover-underline-animation">
+                    <a href="" id="news-link">Berita</a>
+                </div>
+                <div class="hover-underline-animation">
+                    <a href="contact-us.html" id="contact-link">Hubungi Kami</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="location-selector">
+            <label for="location">Select Location:</label>
+            <select id="location" onchange="updateLocation()">
+                <option value="Kepulauan Seribu">Kepulauan Seribu</option>
+                <option value="Jakarta">Jakarta</option>
+                <option value="Bandung">Bandung</option>
+            </select>
+        </section>
+
+        <section class="forecast">
+            <h2>Prakiraan cuaca <span id="selected-location">Kepulauan Seribu</span></h2>
+            <div class="forecast-card">
+                <h3>Monday</h3>
+                <img src="../images/sunny.png" alt="Sunny">
+                <p>25°C - 32°C</p>
+                <p>Wind: 10 km/h</p>
+            </div>
+            <div class="forecast-card">
+                <h3>Tuesday</h3>
+                <img src="../images/cloudy.png" alt="Cloudy">
+                <p>26°C - 31°C</p>
+                <p>Wind: 12 km/h</p>
+            </div>
+            <div class="forecast-card">
+                <h3>Wednesday</h3>
+                <img src="../images/cloudy.png" alt="Cloudy">
+                <p>26°C - 31°C</p>
+                <p>Wind: 12 km/h</p>
+            </div>
+            <div class="forecast-card">
+                <h3>Thursday</h3>
+                <img src="../images/thunderstorm.png" alt="Thunderstorm">
+                <p>26°C - 31°C</p>
+                <p>Wind: 12 km/h</p>
+            </div>
+            <div class="forecast-card">
+                <h3>Friday</h3>
+                <img src="../images/cloudy.png" alt="Cloudy">
+                <p>26°C - 31°C</p>
+                <p>Wind: 12 km/h</p>
+            </div>
+            <div class="forecast-card">
+                <h3>Saturday</h3>
+                <img src="../images/sunny.png" alt="Sunny">
+                <p>26°C - 31°C</p>
+                <p>Wind: 12 km/h</p>
+            </div>
+            <div class="forecast-card">
+                <h3>Sunday</h3>
+                <img src="../images/sunny.png" alt="Sunny">
+                <p>26°C - 31°C</p>
+                <p>Wind: 12 km/h</p>
+            </div>
+        </section>
+    </main>
+</body>
+
+<footer>
+    <div>
+        <a href="https://twitter.com/infoBMKG">
+    <img src="../Images/twticon.png" alt="twt logo" width="30" height="20">
+</a>
+<a href="https://www.instagram.com/infoBMKG">
+    <img src="../Images/ig.png" alt="ig logo" width="20" height="20">
+</a>
+</div>
+<p class="copyright">© 2024 - Badan Meteorologi, Klimatologi, dan Geofisika</p>
+</footer> 
+<script src="../JS/carousel.js"></script>
+</html>
+
+
+

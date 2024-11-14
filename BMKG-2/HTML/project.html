@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMKG | Badan Meteorologi, Klimatologi, Dan Geofisika</title>
+    <link rel="stylesheet" href="../CSS/project.css">
+</head>
+<body>
+    <nav id="navbar">
+        <img src="" alt="" width="150">
+        <div id="dropdown-icon">☰</div>
+        <div id="nav-menu">
+            <div id="menu-right">
+                <div class="hover-underline-animation">
+                    <a href="#" id="home-link">Home</a>
+                </div>
+                <div class="hover-underline-animation">
+                    <a href="weather-forecast.html" id="weather-link">Cuaca</a>
+                </div>
+                <div class="hover-underline-animation">
+                    <a href="" id="news-link">Berita</a>
+                </div>
+                <div class="hover-underline-animation">
+                    <a href="contact-us.html" id="contact-link">Hubungi Kami</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="warning-banner">
+        PERINGATAN DINI 14 November 2024 | Jakarta: Waspada Hujan Lebat dan Angin Kencang
+    </div>
+
+    <div class="container">
+        <aside class="sidebar">
+            <a href="./weather-forecast.html">
+                
+            </a>
+            <div class="forecast-card">
+                <h3>Cuaca Saat Ini</h3>
+                <br>
+                <h4>Jakarta Barat</h4>
+                <img src="../images/sunny.png" alt="Sunny" />
+                <h4>Cerah</h4>
+                <br>
+                <p>32°C</p>
+            </div>
+        </aside>
+
+        <main>
+            <div class="earthquake-section">
+                <img src="../images/maps.png" alt="maps-pinpoint">
+                <h3>Gempa Bumi Terkini</h3>
+                <br>
+                <p><strong>Tanggal:</strong> 14 November 2024, 01:40 WIB</p>
+                <p><strong>Magnitudo:</strong> 5.1</p>
+                <p><strong>Kedalaman:</strong> 10 km</p>
+                <p><strong>Lokasi:</strong> Enggano, Bengkulu</p>
+                <p><strong>Potensi Tsunami:</strong> Tidak</p>
+            </div>
+        </main>
+    </div>
+
+    <div class="banner-section">
+        <h1>Selamat Datang di Website BMKG</h1>
+        <a href="weather-forecast.html">
+            <button id="btn1">Cek Prakiraan Cuaca</button>
+        </a>
+    </div>
+
+    <section class="featured-news">
+<div class="carousel">
+    
+    <div class="carousel-slides">
+        <a href="">
+            <!-- Slide 1 -->
+        <div class="carousel-slide active">
+            <img src="../Images/banner1.jpg" alt="Banner 1" class="carousel-image">
+            <div class="carousel-caption">
+                <h2>Menulusuri Jejak Tragedi Tsunami Aceh, BMKG Bangun Masyarakat Tanggap Bencana</h2>
+            </div>
+        </div>
+        </a>
+        
+       
+        <!-- Slide 2 -->
+        <a href="">
+        <div class="carousel-slide">
+            <img src="../Images/banner2.jpeg" alt="Banner 2" class="carousel-image">
+            <div class="carousel-caption">
+                <h2>BMKG Selenggarakan Side Event UNESCO-IOC 2nd Global Tsunami Symphosium 2024</h2>
+            </div>
+        </div>
+        </a>
+        
+
+        <a href="">
+        <!-- Slide 3 -->
+        <div class="carousel-slide">
+            <img src="../Images/banner3.jpg" alt="Banner 3" class="carousel-image">
+            <div class="carousel-caption">
+                <h2>BMKG: SLG Bentuk Kontribusi Dukung Program Siap Siaga Tsunami di Indonesia</h2>
+            </div>
+        </div>
+        </a>
+    </div>
+    <!-- Navigation Dots -->
+    <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+</div>
+
+    </section>
+</body>
+
+<footer>
+    <div>
+        <a href="https://twitter.com/infoBMKG">
+    <img src="../Images/twticon.png" alt="twt logo" width="30" height="20">
+</a>
+<a href="https://www.instagram.com/infoBMKG">
+    <img src="../Images/ig.png" alt="ig logo" width="20" height="20">
+</a>
+</div>
+<p class="copyright">© 2024 - Badan Meteorologi, Klimatologi, dan Geofisika</p>
+</footer> 
+<script src="../JS/carousel.js"></script>
+</html>
