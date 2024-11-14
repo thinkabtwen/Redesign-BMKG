@@ -126,29 +126,42 @@ nav ul li a {
 }
 
 .sidebar {
-    flex: 0 0 200px;
+    flex: 0 0 500px;
 }
 
 .forecast-card {
     background-color: #fff;
     border-radius: 8px;
-    padding: 1rem;
+    padding: 2rem; /* Increased padding */
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    font-size: 0.9rem;
-    width: 100%;
+    font-size: 1.1rem; /* Increased font size */
+    width: 100%; /* Maintain full width in sidebar */
+    max-width: 500px;
 }
 
 .forecast-card img {
-    width: 50px;
+    width: 150px; /* Increased image size */
 }
 
 .earthquake-section {
     background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ddd;
     border-radius: 8px;
+    padding: 2rem; /* Increased padding */
     flex-grow: 1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem; /* Increased font size */
+    width: 100%; /* Maintain full width in sidebar */
+    max-width: 500px;
+    text-align: center;
+}
+
+.earthquake-section p{
+    text-align: left;
+}
+
+.earthquake-section img{
+    width:130px;
 }
 
 footer {
