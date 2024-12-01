@@ -1,318 +1,347 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: white;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
-.warning-banner {
-    background-color: #ffcc00;
-    color: #333;
-    padding: 15px;
-    text-align: center;
-    font-weight: bold;
+header {
+  background-color: #ffffff;
+  border-bottom: 2px solid #e1e1e1;
 }
 
-.container {
-    display: flex;
-    padding: 20px;
-    gap: 20px;
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  font-size: 14px;
 }
 
-.sidebar {
-    flex: 0 0 500px;
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
 
-.forecast-card {
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 2rem; /* Increased padding */
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    font-size: 1.1rem; /* Increased font size */
-    width: 100%; /* Maintain full width in sidebar */
-    max-width: 500px;
+.logo-container {
+  display: flex;
+  align-items: center;
 }
 
-.forecast-card img {
-    width: 150px; /* Increased image size */
+.logo {
+  width: 50px;
+  height: auto;
+  margin-right: 20px;
 }
 
-
-.earthquake-section {
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 2rem; /* Increased padding */
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    font-size: 1.1rem; /* Increased font size */
-    width: 100%; /* Maintain full width in sidebar */
-    max-width: 500px;
+.logo-text h1 {
+  font-size: 20px;
+  margin: 0;
+  color: #333;
 }
 
-.earthquake-section p{
-    text-align: left;
+.logo-text p {
+  font-size: 14px;
+  margin: 0;
+  color: #666;
 }
 
-.earthquake-section img{
-    width:150px;
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
 }
 
-/* Navigation Styles */
+.alert {
+  background-color: #FFD700;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 20px;
+  background-color: #fff;
+}
+
+.weather-info, .earthquake-info {
+  width: 45%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.weather-info .temperature {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.earthquake-info img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.additional-info {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.info-box {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  width: 22%;
+}
+
+.news-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.news-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  width: 45%; /* Mengatur lebar setiap item berita */
+  text-align: left;
+  display: flex;
+  flex-direction: row; /* Menyusun gambar dan teks sejajar secara horizontal */
+}
+
+.news-content {
+  display: flex;
+  flex-direction: row; /* Menyusun gambar dan teks dalam satu baris */
+  align-items: center; /* Vertikal align gambar dan teks */
+}
+
+.news-image {
+  width: 400px; /* Atur ukuran gambar */
+  height: auto;
+  margin-right: 15px; /* Memberikan jarak antara gambar dan teks */
+}
+
+.news-text h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.news-text button {
+  padding: 10px 15px;
+  background-color: #FFD700;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: left;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-left, .footer-right {
+  flex: 1;
+}
+
+.footer-logo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.footer-address p {
+  margin: 5px 0;
+}
+
+.footer-right {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links h3, .footer-social h3 {
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin: 5px 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-social-icons a {
+  margin-right: 5px;
+}
+
+.footer-app-links a {
+  margin-right: 50px;
+}
+
+.footer-social-icons img, .footer-app-links img {
+  width: 110px;
+  height: auto;
+}
+
 nav {
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px;
-}
-
-nav img {
-    width: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
 }
 
 #nav-menu {
-    display: flex;
-    flex-grow: 1;
-    justify-content: flex-end;
-}
-
-#dropdown-icon {
-    display: block;
-    padding: 20px;
-    font-size: 24px;
-    cursor: pointer; 
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
 }
 
 #menu-right {
-    display: flex;
-    align-items: center;
-}
-
-#menu-right.show {
-    display: flex; 
-    flex-direction: column; 
-    width: 100%; 
+  display: flex;
+  align-items: center;
 }
 
 div a {
-    text-decoration: none;
-    color: white;
-    margin-left: 10px;
-    margin-right: 10px;
-    font-family: sans-serif;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: sans-serif;
 }
 
 .hover-underline-animation {
-    display: inline-block;
-    position: relative;
-    color: white;
+  display: inline-block;
+  position: relative;
+  color: white;
 }
 
 .hover-underline-animation:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: white;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
 }
 
 .hover-underline-animation:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 @media only screen and (max-width: 768px) {
-    nav {
-        flex-direction: column; 
-        padding: 20px; 
-    }
+  nav {
+      flex-direction: column; 
+      padding: 20px; 
+  }
 
-    #nav-menu {
-        flex-direction: column; 
-        width: 100%; 
-    }
+  #nav-menu {
+      flex-direction: column; 
+      width: 100%; 
+  }
 
-    #menu-right {
-        display: none; 
-        justify-content: right; 
-    }
+  #menu-right {
+      display: none; 
+      justify-content: right; 
+  }
 
-    .banner-section {
-        font-size: 28px; 
-        padding: 50px 10px; 
-    }
+  .banner-section {
+      font-size: 28px; 
+      padding: 50px 10px; 
+  }
 
-    #btn1 {
-        background-color: black;
-        color: white;
-        width: 180px;
-        height: 40px;
-        border: none;
-        border-radius: 8px;
-        font-size: 15px;
-        cursor: pointer;
-    }
-    
-    #btn1:hover{
-        background-color: black;
-        color: white;
-        width: 180px;
-        height: 40px;
-        border: none;
-        border-radius: 8px;
-        font-size: 15px;
-        cursor: pointer;
-    }
+  #btn1 {
+      color: rgb(0, 0, 0);
+      width: 180px;
+      height: 40px;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      cursor: pointer;
+  }
+  
+  #btn1:hover{
+      color: rgb(0, 0, 0);
+      width: 180px;
+      height: 40px;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      cursor: pointer;
+  }
 }
 
 @media only screen and (min-width: 769px) {
-    #dropdown-icon {
-        display: none; 
-    }
+  #dropdown-icon {
+      display: none; 
+  }
 
-    #menu-right {
-        display: flex; 
-    }
+  #menu-right {
+      display: flex; 
+  }
 }
 
-/* Banner Section Styles */
-.banner-section {
-    text-align: center;
-    font-size: 40px;
-    padding: 150px 20px;
-    font-family: sans-serif;
-    background-image: url("../Images/wonderful-indonesia.jpg");
-    background-position: center;
-    background-size: cover;
-    color: white;
-    filter: contrast(65%);
+.info-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 10px;
 }
 
-.banner-section p {
-    font-size: 20px;
-    padding: 10px 0;
+.info-box ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-#btn1 {
-    background-color: black;
-    color: white;
-    width: 180px;
-    height: 40px;
-    border: none;
-    border-radius: 8px;
-    font-size: 15px;
-    cursor: pointer;
+.info-box ul li {
+  text-align: left;
+  font-size: 30px;
+  color: #555;
+  margin-bottom: 10px;
 }
 
-#btn1:hover{
-    background-color: white;
-    color: black;
-    width: 180px;
-    height: 40px;
-    border: none;
-    border-radius: 8px;
-    font-size: 15px;
-    cursor: pointer;
+.earthquake-info img {
+  width: 80%; /* Mengatur gambar agar mengisi 100% dari lebar kontainer */
+  max-width: 500px; /* Menetapkan lebar maksimum gambar */
+  height: auto; /* Menjaga rasio aspek gambar */
 }
 
-/* Carousel Styles */
-.carousel {
-    position: relative;
-    max-width: 100%;
-    margin: auto;
-    overflow: hidden;
-}
-
-.carousel-slides {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-.carousel-slide {
-    min-width: 100%;
-    position: relative;
-}
-
-.carousel-image {
-    width: 100%;
-    max-height: 800px;
-    object-fit: cover;
-}
-
-.carousel-caption {
-    position: absolute;
-    bottom: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.dots {
-    text-align: center;
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
-}
-
-.dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 5px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    cursor: pointer;
-}
-
-.active {
-    background-color: #717171;
-}
-
-.featured-news {
-    display: flex;
-    justify-content: space-around;
-    padding: 50px;
-    background-color: #f9f9f9;
-}
-
-/* Footer Styles */
-footer {
-    background-color: black;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    position: relative;
-    width: 100%;
-    bottom: 0;
-}
-
-.copyright {
-    font-size: 12px;
-    margin-top: 10px;
-    color: white;
-}
-
-/* Style for the active link */
-.active-link {
-    font-weight: bold;
-    text-decoration: underline;
-    color: whitesmoke; 
-}
