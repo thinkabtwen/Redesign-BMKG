@@ -1,132 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BMKG | Badan Meteorologi, Klimatologi, Dan Geofisika</title>
+    <title>BMKG Dashboard</title>
     <link rel="stylesheet" href="../CSS/project.css">
 </head>
 <body>
-    <nav id="navbar">
-        <img src="" alt="" width="150">
-        <div id="dropdown-icon">☰</div>
-        <div id="nav-menu">
-            <div id="menu-right">
-                <div class="hover-underline-animation">
-                    <a href="#" id="home-link">Home</a>
+    <header>
+        <div class="header-top">
+            <span>Minggu, 17 November 2024</span>
+            <span>STANDAR WAKTU INDONESIA | 00:00:00 WIB / 00:00:00 UTC</span>
+        </div>
+        <div class="header-main">
+            <div class="logo-container">
+                <img src="../Images/Logo_BMKG_(2010).png" alt="BMKG Logo" class="logo">
+                <div class="logo-text">
+                    <h1>Badan Meteorologi, Klimatologi, dan Geofisika</h1>
+                    <p>Cermat memberi tahu, Akurat untuk keselamatan.</p>
                 </div>
-                <div class="hover-underline-animation">
-                    <a href="weather-forecast.html" id="weather-link">Cuaca</a>
+            </div>
+            <nav id="navbar">
+                <img src="" alt="" width="150">
+                <div id="dropdown-icon">☰</div>
+                <div id="nav-menu">
+                    <div id="menu-right">
+                        <div class="hover-underline-animation">
+                            <a href="#" id="home-link">Home</a>
+                        </div>
+                        <div class="hover-underline-animation">
+                            <a href="weather-forecast.html" id="weather-link">Cuaca</a>
+                        </div>
+                        <div class="hover-underline-animation">
+                            <a href="" id="news-link">Berita</a>
+                        </div>
+                        <div class="hover-underline-animation">
+                            <a href="contact-us.html" id="contact-link">Hubungi Kami</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="hover-underline-animation">
-                    <a href="" id="news-link">Berita</a>
+            </nav>
+        </div>
+        <div class="alert">
+            <p>Peringatan Dini 14 November 2024 | Jakarta: Waspada Cuaca Ekstrem hingga 31°</p>
+        </div>
+    </header>
+    <main>
+        <div class="main-content">
+            <div class="weather-info">
+                <h2>Cuaca Saat Ini</h2>
+                <div class="weather-details">
+                    <h3>Jakarta Barat</h3>
+                    <img src="../Images/sunny.png" alt="Ikon Cuaca" class="weather-icon">
+                    <br>
+                    <span>Jakarta</span>
+                    <span class="temperature">31°</span>
+                    <p>Kemungkinan Hujan: 12%</p>
                 </div>
-                <div class="hover-underline-animation">
-                    <a href="contact-us.html" id="contact-link">Hubungi Kami</a>
+            </div>            
+            <div class="earthquake-info">
+                <h2>Gempa Bumi Terkini</h2>
+                <img src="../Images/d8332d00c8a8bebc115fca6d5ca7575b.png" alt="Peta Gempa Terkini">
+                <p>16 November 2024, 22:28:37 WIB</p>
+                <p>Magnitudo: 4.9 | Kedalaman: 26 KM</p>
+                <p>Lokasi: Jakarta Barat</p>
+            </div>
+        </div>
+
+        <div class="additional-info">
+            <div class="info-box">
+                <h3>Index Kualitas Udara</h3>
+                <ul>
+                    <li>Jakarta: 75.3</li>
+                    <li>Kota Jambi: 17.2</li>
+                    <li>Palangkaraya: 6.6</li>
+                    <li>Pekanbaru: 19.5</li>
+                </ul>
+            </div>            
+            <div class="info-box">
+                <h3>Informasi Iklim</h3>
+                <img src="../Images/e0e06dc17fe48b086b7e372109767e82.png" alt="Informasi Iklim" class="climate-image">
+            </div>
+            <div class="info-box">
+                <h3>Perkiraan Angin</h3>
+                <img src="../Images/4e9994e7587c3b701ec8473f26984eb7.png" alt="Perkiraan Angin" class="climate-image">
+            </div>
+            <div class="info-box">
+                <h3>Citra Satelit</h3>
+                <img src="../Images/7a4fa247c05f5bee33fbd959986d9bc2.png" alt="Citra Satelit" class="climate-image">
+            </div>
+        </div>
+
+        <div class="news-section">
+            <div class="news-item">
+                <div class="news-content">
+                    <img src="../Images/362ae2e6e2c5ab778913b87ac01fec1d.png" alt="Gambar Berita" class="news-image">
+                    <div class="news-text">
+                        <h3>Audien dengan Pegawai BMKG Provinsi Aceh</h3>
+                        <p>Kepala Badan Meteorologi, Klimatologi, dan Geofisika (BMKG), Dwikorita Karnawati, 
+                            didampingi oleh pejabat pimpinan tinggi madya BMKG, melakukan audiensi dengan pegawai 
+                            BMKG Provinsi Aceh di Stasiun Meteorologi Sultan Iskandar Muda...</p>
+                        <button>Baca Selengkapnya</button>
+                    </div>
+                </div>
+            </div>
+            <div class="news-item">
+                <div class="news-content">
+                    <img src="../Images/bd7b38284bb78f5da3b543bddcf68af1.png" alt="Gambar Berita" class="news-image">
+                    <div class="news-text">
+                        <h3>BMKG: 54 Negara Berkomitmen untuk Kurangi Risiko dan Dampak Tsunami</h3>
+                        <p>Sebanyak 54 negara, termasuk Indonesia, telah menyatakan komitmen untuk 
+                            meningkatkan upaya mitigasi risiko tsunami melalui penguatan sistem peringatan dini, 
+                            edukasi masyarakat, dan pembangunan infrastruktur tahan bencana...</p>
+                        <button>Baca Selengkapnya</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </nav>
-    
-    <div class="warning-banner">
-        PERINGATAN DINI 14 November 2024 | Jakarta: Waspada Hujan Lebat dan Angin Kencang
-    </div>
-
-    <div class="container">
-        <aside class="sidebar">
-            <a href="./weather-forecast.html">
-                
-            </a>
-            <div class="forecast-card">
-                <h3>Cuaca Saat Ini</h3>
-                <br>
-                <h4>Jakarta Barat</h4>
-                <img src="../images/sunny.png" alt="Sunny" />
-                <h4>Cerah</h4>
-                <br>
-                <p>32°C</p>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <img src="../Images/Logo_BMKG_(2010).png" alt="BMKG Logo" class="footer-logo">
+                <div class="footer-address">
+                    <p>Kantor Pusat BMKG</p>
+                    <p>Jl. Angkasa No. 2 Kemayoran, Jakarta Pusat, DKI Jakarta 10610</p>
+                    <p>PO Box 3540 Jkt.</p>
+                    <p>Tel. & Fax: (021) 196 | (021) 4246703</p>
+                    <p>Email: cc196@bmkg.go.id</p>
+                </div>
             </div>
-        </aside>
-
-        <main>
-            <div class="earthquake-section">
-                <img src="../images/maps.png" alt="maps-pinpoint">
-                <h3>Gempa Bumi Terkini</h3>
-                <br>
-                <p><strong>Tanggal:</strong> 14 November 2024, 01:40 WIB</p>
-                <p><strong>Magnitudo:</strong> 5.1</p>
-                <p><strong>Kedalaman:</strong> 10 km</p>
-                <p><strong>Lokasi:</strong> Enggano, Bengkulu</p>
-                <p><strong>Potensi Tsunami:</strong> Tidak</p>
-            </div>
-        </main>
-    </div>
-
-    <div class="banner-section">
-        <h1>Selamat Datang di Website BMKG</h1>
-        <a href="weather-forecast.html">
-            <button id="btn1">Cek Prakiraan Cuaca</button>
-        </a>
-    </div>
-
-    <section class="featured-news">
-<div class="carousel">
-    
-    <div class="carousel-slides">
-        <a href="">
-            <!-- Slide 1 -->
-        <div class="carousel-slide active">
-            <img src="../Images/banner1.jpg" alt="Banner 1" class="carousel-image">
-            <div class="carousel-caption">
-                <h2>Menulusuri Jejak Tragedi Tsunami Aceh, BMKG Bangun Masyarakat Tanggap Bencana</h2>
+            <div class="footer-right">
+                <div class="footer-links">
+                    <h3>LINK BMKG</h3>
+                    <ul>
+                        <li><a href="#">Informasi Cuaca</a></li>
+                        <li><a href="#">Cuaca Maritim</a></li>
+                        <li><a href="#">Cuaca Penerbangan</a></li>
+                        <li><a href="#">CEWS</a></li>
+                        <li><a href="#">InaTEWS</a></li>
+                        <li><a href="#">Data Online BMKG</a></li>
+                        <li><a href="#">JDIH BMKG</a></li>
+                        <li><a href="#">Inspektorat BMKG</a></li>
+                        <li><a href="#">Pusdiklat BMKG</a></li>
+                        <li><a href="#">STMK</a></li>
+                        <li><a href="#">E-Perguruan BMKG</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>BMKG Mobile</h3>
+                    <div class="footer-app-links">
+                        <a href="#"><img src="../Images/18555e38d3c36189b957dded3a20af34.png" alt="Google Play"></a>
+                        <a href="#"><img src="../Images/4f06b0a47a9a9fb817dd6e613ddc4e87.png" alt="App Store"></a>
+                    </div>
+                    <h3>Visit Us</h3>
+                    <div class="footer-social-icons">
+                        <a href="#"><img src="../Images/e5e7efc535033e213d589a4794a6bcb7.png" alt="Social media"></a>
+                    </div>
+                </div>
             </div>
         </div>
-        </a>
-        
-       
-        <!-- Slide 2 -->
-        <a href="">
-        <div class="carousel-slide">
-            <img src="../Images/banner2.jpeg" alt="Banner 2" class="carousel-image">
-            <div class="carousel-caption">
-                <h2>BMKG Selenggarakan Side Event UNESCO-IOC 2nd Global Tsunami Symphosium 2024</h2>
-            </div>
-        </div>
-        </a>
-        
-
-        <a href="">
-        <!-- Slide 3 -->
-        <div class="carousel-slide">
-            <img src="../Images/banner3.jpg" alt="Banner 3" class="carousel-image">
-            <div class="carousel-caption">
-                <h2>BMKG: SLG Bentuk Kontribusi Dukung Program Siap Siaga Tsunami di Indonesia</h2>
-            </div>
-        </div>
-        </a>
-    </div>
-    <!-- Navigation Dots -->
-    <div class="dots">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-</div>
-
-    </section>
+    </footer>    
 </body>
-
-<footer>
-    <div>
-        <a href="https://twitter.com/infoBMKG">
-    <img src="../Images/twticon.png" alt="twt logo" width="30" height="20">
-</a>
-<a href="https://www.instagram.com/infoBMKG">
-    <img src="../Images/ig.png" alt="ig logo" width="20" height="20">
-</a>
-</div>
-<p class="copyright">© 2024 - Badan Meteorologi, Klimatologi, dan Geofisika</p>
-</footer> 
-<script src="../JS/carousel.js"></script>
 </html>
