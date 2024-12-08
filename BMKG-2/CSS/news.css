@@ -122,16 +122,12 @@ nav a {
     border-radius: 5px;
 }
 
-.read-more {
-    display: inline-block;
-    margin-top: 10px;
-    color: #FFD700;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.read-more:hover {
-    text-decoration: underline;
+.news-button {
+  padding: 10px 15px;
+  background-color: #FFD700;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 footer {
