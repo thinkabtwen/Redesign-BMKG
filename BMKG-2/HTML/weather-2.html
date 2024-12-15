@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prakiraan Cuaca - BMKG</title>
+    <link rel="stylesheet" href="../CSS/weather-2.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <span>Minggu, 17 November 2024</span>
+            <span>STANDAR WAKTU INDONESIA | 00:00:00 WIB / 00:00:00 UTC</span>
+        </div>
+        <div class="header-main">
+            <div class="logo-container">
+                <img src="../Images/Logo_BMKG_(2010).png" alt="BMKG Logo" class="logo">
+                <div class="logo-text">
+                    <h1>Badan Meteorologi, Klimatologi, dan Geofisika</h1>
+                    <p>Cermat memberi tahu, Akurat untuk keselamatan.</p>
+                </div>
+            </div>
+            <nav id="navbar">
+                <img src="" alt="" width="150">
+                <div id="dropdown-icon">☰</div>
+                <div id="nav-menu">
+                    <div id="menu-right">
+                        <div class="hover-underline-animation">
+                            <a href="project.html" id="home-link">Home</a>
+                        </div>
+                        <div class="hover-underline-animation">
+                            <a href="#" id="weather-link" style="color:grey; text-decoration: underline">Cuaca</a>
+                        </div>
+                        <div class="hover-underline-animation">
+                            <a href="news.html" id="news-link">Berita</a>
+                        </div>
+                        <div class="hover-underline-animation">
+                            <a href="contact-us.html" id="contact-link">Hubungi Kami</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="location-selector">
+            <label for="location">Pilih Lokasi:</label>
+            <select id="location" onchange="updateLocation()">
+                <option value="Kepulauan Seribu">Kepulauan Seribu</option>
+                <option value="Cengkareng">Cengkareng</option>
+                <option value="Kembangan">Kembangan</option>
+                <option value="Kebon Jeruk">Kebon Jeruk</option>
+                <option value="Palmerah">Palmerah</option>
+                <option value="Grogol">Grogol</option>
+                <option value="Tj. Priok">Tanjung Priok</option>
+                <option value="Penjaringan">Penjaringan</option>
+            </select>
+        </section>
+        <section class="days-selector">
+            <label for="days">Pilih Hari:</label>
+            <select id="days" onchange="updateDays()">
+                <option value="Senin">Senin</option>
+                <option value="Selasa">Selasa</option>
+                <option value="Rabu">Rabu</option>
+                <option value="Kamis">Kamis</option>
+                <option value="Jumat">Jumat</option>
+                <option value="Sabtu">Sabtu</option>
+                <option value="Minggu">Minggu</option>
+            </select>
+        </section>
+
+        <section class="forecast">
+            <h2>Prakiraan cuaca <span id="selected-location">Kepulauan Seribu</h2>
+            
+            <div class="forecast-card">
+                <h3>01:00</h3>
+                <img src="../images/cloudy.png" alt="Cloudy">
+                <p>Berawan Tebal</p>
+                <p>Suhu: 27°C</p>
+                <p>Angin: 12 km/h</p>
+            </div>
+            <div class="forecast-card">
+                <h3>02:00</h3>
+                <img src="../images/cloudy.png" alt="Cloudy">
+                <p>Berawan Tebal</p>
+                <p>Suhu: 27°C</p>
+                <p>Angin: 12 km/h</p>
+            </div>
+            <div class="forecast-card">
+                <h3>03:00</h3>
+                <img src="../images/cloudy.png" alt="Cloudy">
+                <p>Berawan Tebal</p>
+                <p>Suhu: 27°C</p>
+                <p>Angin: 11 km/h</p>
+            </div>
+            <div class="forecast-card">
+                <h3>04:00</h3>
+                <img src="../images/cloudy.png" alt="Cloudy">
+                <p>Berawan Tebal</p>
+                <p>Suhu: 26°C</p>
+                <p>Angin: 8 km/h</p>
+            </div>
+            <div class="forecast-card">
+                <h3>05:00</h3>
+                <img src="../images/thunderstorm.png" alt="Thunderstorm">
+                <p>Hujan Petir</p>
+                <p>Suhu: 26°C</p>
+                <p>Angin: 12 km/h</p>
+            </div>
+            <div class="forecast-card">
+                <h3>06:00</h3>
+                <img src="../images/thunderstorm.png" alt="Thunderstorm">
+                <p>Hujan Petir</p>
+                <p>Suhu: 27°C</p>
+                <p>Angin: 12 km/h</p>
+            </div>
+            <div class="forecast-card">
+                <h3>07:00</h3>
+                <img src="../images/thunderstorm.png" alt="Thunderstorm">
+                <p>Hujan Petir</p>
+                <p>Suhu: 27°C</p>
+                <p>Angin: 10 km/h</p>
+            </div>
+            <div class="forecast-card">
+                <h3>08:00</h3>
+                <img src="../images/light-rain.png" alt="Light Rain">
+                <p>Hujan Ringan</p>
+                <p>Suhu: 29°C</p>
+                <p>Angin: 9 km/h</p>
+            </div>
+            <div class="forecast-card">
+                <h3>09:00</h3>
+                <img src="../images/light-rain.png" alt="Light Rain">
+                <p>Hujan Ringan</p>
+                <p>Suhu: 30°C</p>
+                <p>Angin: 7 km/h</p>
+            </div>
+            <div class="forecast-card">
+                <h3>10:00</h3>
+                <img src="../images/light-rain.png" alt="Light Rain">
+                <p>Hujan Ringan</p>
+                <p>Suhu: 30°C</p>
+                <p>Angin: 8 km/h</p>
+            </div>
+            <div class="forecast-card">
+                <h3>11:00</h3>
+                <img src="../images/cerah-berawan.png" alt="Partly Cloudy">
+                <p>Cerah Berawan</p>
+                <p>Suhu: 30°C</p>
+                <p>Angin: 8 km/h</p>
+            </div>
+            <div class="forecast-card">
+                <h3>12:00</h3>
+                <img src="../images/cerah-berawan.png" alt="Partly Cloudy">
+                <p>Cerah Berawan</p>
+                <p>Suhu: 31°C</p>
+                <p>Angin: 8 km/h</p>
+            </div>
+            <div class="forecast-card">
+                <h3>13:00</h3>
+                <img src="../images/sunny-removebg-preview.png" alt="sunny">
+                <p>Cerah</p>
+                <p>Suhu: 32°C</p>
+                <p>Angin: 6 km/h</p>
+            </div>
+            <div class="forecast-card">
+                <h3>14:00</h3>
+                <img src="../images/sunny-removebg-preview.png" alt="sunny">
+                <p>Cerah</p>
+                <p>Suhu: 34°C</p>
+                <p>Angin: 6 km/h</p>
+            </div>
+            <div class="forecast-card">
+                <h3>15:00</h3>
+                <img src="../images/sunny-removebg-preview.png" alt="sunny">
+                <p>Cerah</p>
+                <p>Suhu: 35°C</p>
+                <p>Angin: 8 km/h</p>
+            </div>
+            <div class="forecast-card">
+                <h3>16:00</h3>
+                <img src="../images/sunny-removebg-preview.png" alt="sunny">
+                <p>Cerah</p>
+                <p>Suhu: 34°C</p>
+                <p>Angin: 6 km/h</p>
+            </div>
+            <div class="forecast-card">
+                <h3>17:00</h3>
+                <img src="../images/cerah-berawan.png" alt="Partly Cloudy">
+                <p>Cerah Berawan</p>
+                <p>Suhu: 32°C</p>
+                <p>Angin: 6 km/h</p>
+            </div>
+            <div class="forecast-card">
+                <h3>18:00</h3>
+                <img src="../images/cloudy.png" alt="Cloudy">
+                <p>Berawan Tebal</p>
+                <p>Suhu: 30°C</p>
+                <p>Angin: 15 km/h</p>
+            </div>
+            <div class="forecast-card">
+                <h3>19:00</h3>
+                <img src="../images/light-rain.png" alt="Light Rain">
+                <p>Hujan Ringan</p>
+                <p>Suhu: 29°C</p>
+                <p>Angin: 14 km/h</p>
+            </div>
+            <div class="forecast-card">
+                <h3>20:00</h3>
+                <img src="../images/light-rain.png" alt="Light Rain">
+                <p>Hujan Ringan</p>
+                <p>Suhu: 29°C</p>
+                <p>Angin: 12 km/h</p>
+            </div>
+            <div class="forecast-card">
+                <h3>21:00</h3>
+                <img src="../images/thunderstorm.png" alt="Thunderstorm">
+                <p>Hujan Petir</p>
+                <p>Suhu: 29°C</p>
+                <p>Angin: 12 km/h</p>
+            </div>
+            <div class="forecast-card">
+                <h3>22:00</h3>
+                <img src="../images/thunderstorm.png" alt="Thunderstorm">
+                <p>Hujan Petir</p>
+                <p>Suhu: 25°C</p>
+                <p>Angin: 15 km/h</p>
+            </div>
+            <div class="forecast-card">
+                <h3>23:00</h3>
+                <img src="../images/thunderstorm.png" alt="Thunderstorm">
+                <p>Hujan Petir</p>
+                <p>Suhu: 26°C</p>
+                <p>Angin: 14 km/h</p>
+            </div>
+        </section>
+    </main>
+</body>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-left">
+            <img src="../Images/Logo_BMKG_(2010).png" alt="BMKG Logo" class="footer-logo">
+            <div class="footer-address">
+                <p>Kantor Pusat BMKG</p>
+                <p>Jl. Angkasa No. 2 Kemayoran, Jakarta Pusat, DKI Jakarta 10610</p>
+                <p>PO Box 3540 Jkt.</p>
+                <p>Tel. & Fax: (021) 196 | (021) 4246703</p>
+                <p>Email: cc196@bmkg.go.id</p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="footer-links">
+                <h3>LINK BMKG</h3>
+                <ul>
+                    <li><a href="#">Informasi Cuaca</a></li>
+                    <li><a href="#">Cuaca Maritim</a></li>
+                    <li><a href="#">Cuaca Penerbangan</a></li>
+                    <li><a href="#">CEWS</a></li>
+                    <li><a href="#">InaTEWS</a></li>
+                    <li><a href="#">Data Online BMKG</a></li>
+                    <li><a href="#">JDIH BMKG</a></li>
+                    <li><a href="#">Inspektorat BMKG</a></li>
+                    <li><a href="#">Pusdiklat BMKG</a></li>
+                    <li><a href="#">STMK</a></li>
+                    <li><a href="#">E-Perguruan BMKG</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>BMKG Mobile</h3>
+                <div class="footer-app-links">
+                    <a href="#"><img src="../Images/18555e38d3c36189b957dded3a20af34.png" alt="Google Play"></a>
+                    <a href="#"><img src="../Images/4f06b0a47a9a9fb817dd6e613ddc4e87.png" alt="App Store"></a>
+                </div>
+                <h3>Visit Us</h3>
+                <div class="footer-social-icons">
+                    <a href="#"><img src="../Images/e5e7efc535033e213d589a4794a6bcb7.png" alt="Social media"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="../JS/carousel.js"></script>
+</html>
+
+
+
